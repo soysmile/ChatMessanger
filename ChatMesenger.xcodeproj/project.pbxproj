@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		5393314A21B54FB70043C15C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393314921B54FB70043C15C /* AppDelegate.swift */; };
 		5393314C21B54FB70043C15C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5393314B21B54FB70043C15C /* ViewController.swift */; };
-		5393314F21B54FB70043C15C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5393314D21B54FB70043C15C /* Main.storyboard */; };
-		5393315221B54FB70043C15C /* ChatMesenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5393315021B54FB70043C15C /* ChatMesenger.xcdatamodeld */; };
 		5393315421B54FBA0043C15C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5393315321B54FBA0043C15C /* Assets.xcassets */; };
 		5393315721B54FBA0043C15C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5393315521B54FBA0043C15C /* LaunchScreen.storyboard */; };
+		53C0EAD121B68A3800673478 /* FriendsControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C0EAD021B68A3800673478 /* FriendsControllerHelper.swift */; };
+		53C0EAFD21B6939B00673478 /* ChatMesenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53C0EAFB21B6939B00673478 /* ChatMesenger.xcdatamodeld */; };
+		53E3671D21B6C10700003BE4 /* ChatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E3671C21B6C10700003BE4 /* ChatLogController.swift */; };
+		53E3671F21B6C64200003BE4 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53E3671E21B6C64200003BE4 /* CustomTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5393314621B54FB70043C15C /* ChatMesenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatMesenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5393314921B54FB70043C15C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5393314B21B54FB70043C15C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5393314E21B54FB70043C15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5393315121B54FB70043C15C /* ChatMesenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatMesenger.xcdatamodel; sourceTree = "<group>"; };
 		5393315321B54FBA0043C15C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5393315621B54FBA0043C15C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5393315821B54FBA0043C15C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53C0EAD021B68A3800673478 /* FriendsControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsControllerHelper.swift; sourceTree = "<group>"; };
+		53C0EAFC21B6939B00673478 /* ChatMesenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ChatMesenger.xcdatamodel; sourceTree = "<group>"; };
+		53E3671C21B6C10700003BE4 /* ChatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLogController.swift; sourceTree = "<group>"; };
+		53E3671E21B6C64200003BE4 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				5393314921B54FB70043C15C /* AppDelegate.swift */,
 				5393314B21B54FB70043C15C /* ViewController.swift */,
-				5393314D21B54FB70043C15C /* Main.storyboard */,
 				5393315321B54FBA0043C15C /* Assets.xcassets */,
 				5393315521B54FBA0043C15C /* LaunchScreen.storyboard */,
 				5393315821B54FBA0043C15C /* Info.plist */,
-				5393315021B54FB70043C15C /* ChatMesenger.xcdatamodeld */,
+				53C0EAD021B68A3800673478 /* FriendsControllerHelper.swift */,
+				53C0EAFB21B6939B00673478 /* ChatMesenger.xcdatamodeld */,
+				53E3671C21B6C10700003BE4 /* ChatLogController.swift */,
+				53E3671E21B6C64200003BE4 /* CustomTabBarController.swift */,
 			);
 			path = ChatMesenger;
 			sourceTree = "<group>";
@@ -127,7 +133,6 @@
 			files = (
 				5393315721B54FBA0043C15C /* LaunchScreen.storyboard in Resources */,
 				5393315421B54FBA0043C15C /* Assets.xcassets in Resources */,
-				5393314F21B54FB70043C15C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +143,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53E3671D21B6C10700003BE4 /* ChatLogController.swift in Sources */,
 				5393314C21B54FB70043C15C /* ViewController.swift in Sources */,
+				53E3671F21B6C64200003BE4 /* CustomTabBarController.swift in Sources */,
 				5393314A21B54FB70043C15C /* AppDelegate.swift in Sources */,
-				5393315221B54FB70043C15C /* ChatMesenger.xcdatamodeld in Sources */,
+				53C0EAD121B68A3800673478 /* FriendsControllerHelper.swift in Sources */,
+				53C0EAFD21B6939B00673478 /* ChatMesenger.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5393314D21B54FB70043C15C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5393314E21B54FB70043C15C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5393315521B54FBA0043C15C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -342,12 +342,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		5393315021B54FB70043C15C /* ChatMesenger.xcdatamodeld */ = {
+		53C0EAFB21B6939B00673478 /* ChatMesenger.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				5393315121B54FB70043C15C /* ChatMesenger.xcdatamodel */,
+				53C0EAFC21B6939B00673478 /* ChatMesenger.xcdatamodel */,
 			);
-			currentVersion = 5393315121B54FB70043C15C /* ChatMesenger.xcdatamodel */;
+			currentVersion = 53C0EAFC21B6939B00673478 /* ChatMesenger.xcdatamodel */;
 			path = ChatMesenger.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
